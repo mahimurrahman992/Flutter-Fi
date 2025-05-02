@@ -89,7 +89,7 @@ class BlogTileWithLikes extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Provider.of<ThemeProvider>(context);
+  
 
     return Card(
       margin: EdgeInsets.all(10),

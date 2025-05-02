@@ -9,7 +9,7 @@ import 'package:myflutterfi/providers/comment_provider.dart';
 import 'package:myflutterfi/providers/like_provider.dart';
 import 'package:myflutterfi/providers/project_provider.dart';
 import 'package:myflutterfi/providers/res_appbar_provider.dart';
-import 'package:myflutterfi/providers/slide_controller.dart';
+
 import 'package:myflutterfi/providers/theme_provider.dart';
 import 'package:myflutterfi/screens/admin/admin_panel.dart';
 import 'package:myflutterfi/screens/auth/login_screen.dart';

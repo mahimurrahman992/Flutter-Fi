@@ -42,7 +42,7 @@ class GradientText2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Provider.of<ThemeProvider>(context);
+    Provider.of<ThemeProvider>(context);
     bool isMobile = MediaQuery.of(context).size.width < 800;
 
     return ShaderMask(

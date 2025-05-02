@@ -3,8 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:myflutterfi/const/styles.dart';
-import 'package:myflutterfi/providers/slide_controller.dart';
-import 'package:myflutterfi/providers/theme_provider.dart';
+
 import 'package:myflutterfi/screens/admin/admin_panel.dart';
 import 'package:myflutterfi/screens/auth/auth_screen.dart';
 import 'package:myflutterfi/screens/common_pages/profile_pages/profile_screen.dart';
@@ -15,7 +14,7 @@ import 'package:myflutterfi/screens/features_screeen/projects/projects.dart';
 import 'package:myflutterfi/screens/user/user_panel.dart';
 import 'package:myflutterfi/widgets/gradient_text.dart';
 import 'package:myflutterfi/widgets/switch_toggle.dart';
-import 'package:provider/provider.dart';
+
 
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
@@ -27,8 +26,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     final currentUser = FirebaseAuth.instance.currentUser;
 
-    // Access the ThemeProvider to get the current theme
-    final theme = Provider.of<ThemeProvider>(context);
+
     return AppBar(
       toolbarHeight: 110,
       leading: InkWell(
@@ -89,7 +87,7 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           ),
           TextButton(
             onPressed: () {
-              context.read<SlideController>().toggleContainer('Contact Us');
+          
             },
             child: Text(
               'Contact Us',

@@ -35,7 +35,7 @@ class CustomButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Provider.of<ThemeProvider>(context);
+    Provider.of<ThemeProvider>(context);
     return Padding(
       padding: EdgeInsets.only(
         top: top?.toDouble() ?? 0.0,
@@ -105,7 +105,7 @@ class CustomTextButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Provider.of<ThemeProvider>(context);
+    Provider.of<ThemeProvider>(context);
     return Padding(
       padding: EdgeInsets.only(
         top: top?.toDouble() ?? 0.0,
@@ -161,7 +161,7 @@ class CustomTextButton2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final theme = Provider.of<ThemeProvider>(context);
+    Provider.of<ThemeProvider>(context);
     return Padding(
       padding: EdgeInsets.only(
         top: top?.toDouble() ?? 0.0,

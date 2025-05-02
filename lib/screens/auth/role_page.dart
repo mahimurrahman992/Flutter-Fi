@@ -23,7 +23,7 @@ class _RolePageState extends State<RolePage> {
   Widget build(BuildContext context) {
     final theme = Provider.of<ThemeProvider>(context);
     double width = MediaQuery.of(context).size.width;
-    double height = MediaQuery.of(context).size.height;
+  
     bool isMobile = width < 800; // Mobile screen check
     return Scaffold(
       key: _scaffoldKey, // Assign the key to Scaffold

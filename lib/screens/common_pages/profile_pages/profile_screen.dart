@@ -1,4 +1,4 @@
-import 'dart:io';
+
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -27,7 +27,6 @@ class _ProfilePageState extends State<ProfilePage> {
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   final ImagePicker _picker = ImagePicker();
   bool _isUploading = false;
-  String? _currentAvatarUrl;
 
   Future<void> _uploadImage(Uint8List imageBytes) async {
     final User? currentUser = _auth.currentUser;
@@ -59,7 +58,6 @@ class _ProfilePageState extends State<ProfilePage> {
       });
 
       setState(() {
-        _currentAvatarUrl = downloadUrl;
         _isUploading = false;
       });
 

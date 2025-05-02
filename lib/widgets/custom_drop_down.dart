@@ -28,7 +28,6 @@ class CustomDropdown extends StatelessWidget {
 
     // Get screen width and height for responsiveness
     double screenWidth = MediaQuery.of(context).size.width;
-    double screenHeight = MediaQuery.of(context).size.height;
 
     // Adjust dropdown width based on screen size
     double dropdownWidth = screenWidth < 360 ? screenWidth * 0.8 : screenWidth * 0.4;

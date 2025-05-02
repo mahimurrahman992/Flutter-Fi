@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:myflutterfi/const/colors.dart';
-import 'package:myflutterfi/const/styles.dart';
 import 'package:myflutterfi/providers/theme_provider.dart';
 import 'package:myflutterfi/screens/common_pages/home_page.dart';
 import 'package:myflutterfi/widgets/custom_drawer.dart';
@@ -21,7 +19,6 @@ class CustomMobileAppBar extends StatelessWidget
 
   @override
   Widget build(BuildContext context) {
-    final currentUser = FirebaseAuth.instance.currentUser;
     final theme = Provider.of<ThemeProvider>(context);
 
     // GlobalKey for DrawerController to control the opening/closing of the drawer

@@ -1,4 +1,4 @@
-import 'package:firebase_auth/firebase_auth.dart';
+
 import 'package:flutter/material.dart';
 import 'package:myflutterfi/const/colors.dart';
 import 'package:myflutterfi/const/styles.dart';
@@ -9,7 +9,7 @@ import 'package:myflutterfi/widgets/custom_button.dart';
 import 'package:myflutterfi/widgets/custom_drawer.dart';
 import 'package:myflutterfi/widgets/custom_mob_appbar.dart';
 import 'package:myflutterfi/widgets/custom_textfield.dart';
-import 'package:myflutterfi/screens/common_pages/home_page.dart';
+
 import 'package:provider/provider.dart';
 
 

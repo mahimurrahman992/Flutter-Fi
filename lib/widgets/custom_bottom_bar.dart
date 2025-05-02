@@ -4,7 +4,7 @@ import 'package:myflutterfi/screens/features_screeen/categories.dart';
 import 'package:myflutterfi/screens/features_screeen/developers/developers.dart';
 import 'package:myflutterfi/screens/features_screeen/projects/projects.dart';
 
-import 'package:provider/provider.dart';
+
 
 class CustomBottomNavBar extends StatefulWidget {
   @override

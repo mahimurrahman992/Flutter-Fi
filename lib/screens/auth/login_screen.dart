@@ -23,13 +23,11 @@ class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-  bool _isLoading = false;
   bool _obscureText = true;
 final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   Future<void> login() async {
     if (_formKey.currentState!.validate()) {
       setState(() {
-        _isLoading = true;
       });
 
       try {
@@ -64,7 +62,6 @@ final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
             SnackBar(content: Text(e.message ?? "Error occurred")));
       } finally {
         setState(() {
-          _isLoading = false;
         });
       }
     }
